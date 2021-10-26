@@ -14,8 +14,20 @@ Date: October 26, 2021*/-->
 
 <?php
 
+
+$simpsons [
+    'Homer Simpson',
+    'Marge Simpson',
+    'Lisa Simpson',
+    'Bart Simpson',
+    'Maggie Simpson'
+
+];
+
 function is_a_simpson($full_name) {
     // Complete this function
+    //Test
+
 }
 
 var_dump(is_a_simpson('Lisa Simpson')); // This should return true
