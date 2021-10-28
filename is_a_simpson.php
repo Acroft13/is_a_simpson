@@ -14,8 +14,12 @@ Date: October 26, 2021*/-->
 
 <?php
 
+// $first_name = $_POST['first_name'];
+// $last_name = $_POST['last_name'];
 
-$simpsons [
+// $full_name = $first_name. ' '.$last_name;
+
+$simpsons = [
     'Homer Simpson',
     'Marge Simpson',
     'Lisa Simpson',
@@ -23,18 +27,33 @@ $simpsons [
     'Maggie Simpson'
 
 ];
+// echo var_dump ($simpsons);
 
 function is_a_simpson($full_name) {
     // Complete this function
-    //Test
+    global $simpsons;
 
+    
+     foreach ($simpsons as $simpson) {
+        
+        $last_name = $simpson;
+        if ($simpson == 'Simpson') {
+            return true;
+        
+        // $lastname = $item
+        // $last_name = strtok($_POST['last_name'],',');
+        // if ($last_name == 'Simpson' ) {
+        // return true;
+    }
+}
+    return false;
 }
 
-var_dump(is_a_simpson('Lisa Simpson')); // This should return true
-var_dump(is_a_simpson('Marge Simpson')); // This should return true
-var_dump(is_a_simpson('Ned Flanders')); // This should return false
-var_dump(is_a_simpson('Montgomery Burns')); // This should return false
-var_dump(is_a_simpson('Simpson Harris')); // This should return false
+var_dump(is_a_simpson('Lisa Simpson',$simpsons)); // This should return true
+var_dump(is_a_simpson('Marge Simpson', $simpsons)); // This should return true
+var_dump(is_a_simpson('Ned Flanders',$simpsons)); // This should return false
+var_dump(is_a_simpson('Montgomery Burns',$simpsons)); // This should return false
+var_dump(is_a_simpson('Simpson Harris',$simpsons)); // This should return false
 
 
 
