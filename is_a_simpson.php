@@ -19,6 +19,8 @@ Date: October 26, 2021*/-->
 
 // $full_name = $first_name. ' '.$last_name;
 
+
+// create array for $simpsons
 $simpsons = [
     'Homer Simpson',
     'Marge Simpson',
@@ -27,14 +29,12 @@ $simpsons = [
     'Maggie Simpson'
 
 ];
-// echo var_dump ($simpsons);
+
 
 function is_a_simpson($full_name) {
-    // Complete this function
     global $simpsons;
-
-    
-     foreach ($simpsons as $simpson) {
+    //create foreach loop 
+    foreach ($simpsons as $simpson) {
         
         $last_name = $simpson;
         if ($simpson == 'Simpson') {
